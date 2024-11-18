@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="que-container" id="que1">
+        <p>In CSS, what property is used to change the text color?</p>
+        <div class="box-div" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+        <br>
+        <div class="drag-container">
+        <div class="box-div" ondrop="drop(event)">
+            <p ondragstart="dragstart(event)" draggable="true" id="dragtarget1" value="" class="ss">font-color</p>
+        </div>
+        <div class="box-div" ondrop="drop(event)">
+            <p ondragstart="dragstart(event)" draggable="true" id="dragtarget2" value="" class="ss">color</p>
+        </div>
+        <div class="box-div" ondrop="drop(event)">
+            <p ondragstart="dragstart(event)" draggable="true" id="dragtarget3" value="" class="ss">text-color</p>
+        </div>
+      
+    </div>
+    <br><br>
+        <div id="bnt" style="display: none;">
+            <input type="button" value="clear" onclick="reset()">
+            <input type="button" value="Next" onclick="next2()">
+       
+        </div>
+    </div>
+
+
+
+
+    <div id="que2" style="display: none;">
+        <p>Which JavaScript method is used to write a message directly to the browser console?</p>
+
+        <input type="radio" name="sesson" value="document.write()" onclick="Checkque2()"> document.write()
+
+        <input type="radio" name="sesson" value="console.log()" onclick="Checkque2()"> console.log()
+
+        <input type="radio" name="sesson" value="alert()" onclick="Checkque2()"> alert()
+        <input type="radio" name="sesson" value="print()" onclick="Checkque2()"> print()
+
+        <div id="bnt2" style="display: none;">
+            <input type="button" value="pre" onclick="pre1()">
+            <input type="button" value="Next" onclick="next3()">
+       
+        </div>
+    </div>
+
+
+
+
+    <div id="que3" style="display: none;">
+        <p>Which JavaScript keyword is used to declare a variable that cannot be reassigned?</p>
+
+        <input type="radio" name="sesson" id="let"  value="let" onclick="Checkque3()"> let
+
+        <input type="radio" name="sesson" id="var" value="var" onclick="Checkque3()"> var
+
+        <input type="radio" name="sesson"  id="const" value="const" onclick="Checkque3()">const
+        <input type="radio" name="sesson" id="static" value="static" onclick="Checkque3()"> static
+
+        <div id="bnt3" style="display: none;">
+            <input type="button" value="pre" onclick="pre2()">
+            <input type="button" value="Next" onclick="next4()">
+       
+        </div>
+    </div>
+
+
+
+
+    <div id="que4"  style="display: none;" >
+        <p>Which CSS property is used to change the background color of an element?</p>
+
+        <input type="radio" name="sesson" value="background-color" onclick="Checkque4()"> background-color
+
+        <input type="radio" name="sesson" value="color" onclick="Checkque4()">color
+
+        <input type="radio" name="sesson" value="bg-color" onclick="Checkque4()">bg-color
+        <input type="radio" name="sesson" value="background" onclick="Checkque4()"> background
+        <div id="bnt4" style="display: none;">
+            <input type="button" value="pre" onclick="pre3()">
+            <input type="button" value="Next" onclick="next5()">
+       
+        </div>
+    </div>
+
+
+
+
+    <div id="que5" style="display: none;">
+        <p>In HTML5, which attribute is used to specify that an input field must be filled out?</p>
+
+        <input type="radio" name="sesson" value="mandatory" onclick="Checkque5()"> mandatory
+
+        <input type="radio" name="sesson" value="required" onclick="Checkque5()">required
+
+        <input type="radio" name="sesson" value="validate" onclick="Checkque5()">validate
+        <input type="radio" name="sesson" value="placeholder" onclick="Checkque5()"> placeholder
+        <div id="bnt5" style="display: none;">
+            <input type="button" value="pre" onclick="pre4()">
+            <input type="button" value="submit" onclick="submit()">
+       
+        </div>
+        
+
+    </div>
+    <div >
+
+        <h2 id="disp"></h2>
+
+        <h2 id="error"></h2>
+
+    </div>
+
+</body>
+
+</html>
